@@ -12,12 +12,20 @@ public class Main {
         }
     }
 
+    // scrapingBee api call
+
+    // convert html to txt file
+
+    // takes in api call for website html, parses through the html to find the list
+    // of ingredients and returns it as an
+    // ArrayList.
     public static ArrayList<String> findIngredients(ArrayList<String> arr) throws FileNotFoundException {
         FileReader in = new FileReader("./test.txt");
         BufferedReader reader = new BufferedReader(in);
         int count = 0;
         ArrayList<String> temp = new ArrayList<>();
         try {
+            // use switch case to funnel into different cases
             while (reader.readLine() != null) {
                 String line = reader.readLine();
                 // narrows down to lines that talk ab ingredients
@@ -31,6 +39,7 @@ public class Main {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        System.out.println("");
         System.out.println("Narrowed down to " + count + " lines of code.");
 
         // narrows down to one line
@@ -77,5 +86,19 @@ public class Main {
         System.out.println("There are " + count + " span elements in this line.");
         System.out.println("Done.");
         return arr;
+    }
+
+    // api call to find stores nearby
+    public static ArrayList<String> findStores() {
+        return new ArrayList<>();
+    }
+
+    // takes list of ingredients and stores and finds what ingredients are at which
+    // stores; Including the prices of the
+    // ingredients found, 2D array might be needed here to present different options
+    // to the user (group array ingredient
+    // per row, store by column).
+    public static ArrayList<String> findPrices(ArrayList<String> Ingredients, ArrayList<String> Stores) {
+        return new ArrayList<>();
     }
 }
