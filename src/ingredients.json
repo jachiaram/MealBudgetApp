@@ -1,0 +1,33 @@
+{
+    "ingredient": [
+       {
+          "id":"0",
+          "name": "Chicken",
+          "price": "8.99"
+       },
+     
+       {
+          "id":"1",
+          "name": "Panko",
+          "price": "5.95"
+       },
+
+       {
+        "id":"2",
+        "name": "Salt",
+        "price": "2.34"
+        },
+
+        {
+            "id":"3",
+            "name": "Pepper",
+            "price": "1.99"
+        },
+
+        {
+            "id":"4",
+            "name": "Canola Oil",
+            "price": "7.80"
+        }
+    ]
+ }
